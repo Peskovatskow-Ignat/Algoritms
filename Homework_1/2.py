@@ -19,4 +19,4 @@ def numberOfMatches(n):  #n - кол-во команд
             n = ((n - 1) // 2) + 1
     return match  # Возвращем ответ
 
-print(numberOfMatches(14))
+print(numberOfMatches(4))

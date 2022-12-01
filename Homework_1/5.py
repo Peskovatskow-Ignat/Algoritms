@@ -22,7 +22,7 @@ def removeOuterParentheses(s):
         i += 1  # Переход на следующий символ
     return list_1  # Возвращаем ответ
 
-print(removeOuterParentheses('(()())(())'))
+print(removeOuterParentheses('()(()())(())'))
 
 
 
