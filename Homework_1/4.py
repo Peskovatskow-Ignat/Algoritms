@@ -19,4 +19,9 @@ def minimumAbsDifference(arr):
             para.append([arr[i], arr[i] + diff])  # Добавляем пары у которых разница по модолю равна
     return para  # Возвращаем список пар
 
+<<<<<<< HEAD
 print(minimumAbsDifference([3,8,-10,23,19,-4,-14,27]))
+=======
+
+print(minimumAbsDifference([3, 8, -10, 23, 19, -4, -14, 27]))
+>>>>>>> da37317 (homework)
