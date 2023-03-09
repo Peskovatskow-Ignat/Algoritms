@@ -19,3 +19,12 @@ def getDescentPeriods(prices):
 
     # учитываем еще один период плавного спуска длины 1 - последний элемент массива
     return smooth_periods
+
+def foo(price):
+    dp = [1] * len(price)
+    s = 1
+    for i in range(1, len(price)):
+        if price[i - 1] - 1 == price[i]:
+            dp[i] = dp[i - 1] + 1
+        s += dp[i]
+    return s
