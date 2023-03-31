@@ -4,7 +4,6 @@ n - количество элементов в списке prices
 в худшем случае мы пройдемся по всем элементам списка два раза.
 """
 
-
 def getDescentPeriods(prices):
     n = len(prices)
     smooth_periods = n  # каждый элемент массива - период плавного спуска длины 1
@@ -13,17 +12,13 @@ def getDescentPeriods(prices):
     for i in range(1, n):
         j = i
         # ищем все последовательные дни с плавным спуском цены
-        while j < n and prices[j] == prices[j - 1] - 1:
+        while j < n and prices[j] == prices[j-1]-1:
             j += 1
         # добавляем количество периодов плавного спуска, найденных на текущей итерации
-        smooth_periods += j - i
+        smooth_periods += j-i
 
     # учитываем еще один период плавного спуска длины 1 - последний элемент массива
     return smooth_periods
-
-
-price = [3, 2, 1, 4]
-
 
 def foo(price):
     dp = [1] * len(price)
@@ -33,6 +28,3 @@ def foo(price):
             dp[i] = dp[i - 1] + 1
         s += dp[i]
     return s
-
-
-print(foo(price))
