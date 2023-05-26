@@ -4,7 +4,7 @@
 
 class Solution(object):
     def getMinimumDifference(self, root):
-        self.min_diff = float('inf')  # Инициализируем min_diff как бесконечность
+        self.min_diff = 'inf'  # Инициализируем min_diff как бесконечность
 
         def inorder(node, prev):
             if not node:
