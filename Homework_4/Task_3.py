@@ -8,11 +8,11 @@ def tribonacci(n):
     elif n == 1 or n == 2:
         return 1
 
-    first, second, three = 0, 1, 1  # a, b, c - значениями первых трех элементов последовательности
+    first, second, three = 0, 1, 1  # значениями первых трех элементов последовательности
     curr = 3  # текущий индекс - 3
 
     while curr <= n:  # Цикл выполняется до достижения текущего индекса значения n
-        first, second, three = second, three, first + second + three  # Обновляем значения переменных a, b, c
+        first, second, three = second, three, first + second + three  # Обновляем значения переменных
         curr +=1
     answer = three 
     return answer
